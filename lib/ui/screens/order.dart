@@ -1,11 +1,15 @@
-import 'package:asapdemo/ui/helpers/color_palette.dart';
-import 'package:asapdemo/ui/order/order_listview.dart';
-
-import 'package:asapdemo/ui/shared/drawer/drawer_menu.dart';
-import 'package:asapdemo/ui/shared/main_app_bar.dart';
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:google_fonts/google_fonts.dart';
+
+// Project imports:
+import 'package:asapdemo/ui/helpers/color_palette.dart';
+import 'package:asapdemo/ui/order/order_listview.dart';
+import 'package:asapdemo/ui/shared/drawer/drawer_menu.dart';
+import 'package:asapdemo/ui/shared/main_app_bar.dart';
 
 class OrderScreen extends StatefulWidget {
   const OrderScreen({Key key}) : super(key: key);

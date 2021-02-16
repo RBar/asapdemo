@@ -1,10 +1,12 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:asapdemo/ui/helpers/color_palette.dart';
 import 'package:asapdemo/ui/shared/auth/auth_button.dart';
 import 'package:asapdemo/ui/shared/auth/auth_email_input.dart';
 import 'package:asapdemo/ui/shared/auth/auth_password_input.dart';
 import 'package:asapdemo/ui/shared/auth/auth_text_already_have_or_create.dart';
-import 'package:flutter/material.dart';
-
 import 'package:asapdemo/ui/shared/logo_image.dart';
 
 class LoginSignupColumnWidget extends StatelessWidget {

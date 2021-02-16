@@ -1,12 +1,16 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:google_fonts/google_fonts.dart';
+
+// Project imports:
 import 'package:asapdemo/ui/screens/home.dart';
 import 'package:asapdemo/ui/screens/landing.dart';
 import 'package:asapdemo/ui/screens/login.dart';
-
 import 'package:asapdemo/ui/screens/order.dart';
 import 'package:asapdemo/ui/screens/signup.dart';
 import 'package:asapdemo/ui/screens/splash.dart';
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Myapp extends StatelessWidget {
   const Myapp({Key key}) : super(key: key);

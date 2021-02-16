@@ -1,9 +1,13 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:flutter_svg/flutter_svg.dart';
+
+// Project imports:
 import 'package:asapdemo/ui/helpers/color_palette.dart';
 import 'package:asapdemo/ui/shared/auth/auth_button.dart';
 import 'package:asapdemo/ui/shared/logo_image.dart';
-import 'package:flutter/material.dart';
-
-import 'package:flutter_svg/flutter_svg.dart';
 
 class LandingColumn extends StatelessWidget {
   const LandingColumn({Key key}) : super(key: key);

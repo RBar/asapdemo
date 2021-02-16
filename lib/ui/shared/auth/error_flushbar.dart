@@ -1,5 +1,8 @@
-import 'package:flushbar/flushbar.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:flushbar/flushbar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void showErrorFlushbar(String message, BuildContext context) {
