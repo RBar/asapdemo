@@ -15,7 +15,7 @@ class UserListTile extends StatelessWidget {
           FontAwesomeIcons.chevronLeft,
         ),
         onPressed: () {
-          Navigator.pushReplacementNamed(context, '/landing');
+          Navigator.pop(context);
         },
       ),
       title: Row(
