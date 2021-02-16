@@ -1,0 +1,33 @@
+import 'package:asapdemo/domain/entities/order_entity.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+import 'product_order_model.dart';
+
+part 'order_model.freezed.dart';
+part 'order_model.g.dart';
+
+@freezed
+abstract class OrderModel implements _$OrderModel {
+  const factory OrderModel(
+      {@required int orderId,
+      @required List<ProductOrderModel> productList}) = _OrderModel;
+  factory OrderModel.fromJson(Map<String, dynamic> json) =>
+      _$OrderModelFromJson(json);
+  const OrderModel._();
+  OrderEntity toDomain() => OrderEntity(
+      orderId: orderId,
+      productList: productList.map((product) => product.toDomain()).toList());
+}
+
+class OrderModels {
+  final List<OrderModel> items = [];
+  OrderModels.fromJsonList(QuerySnapshot jsonList) {
+    if (jsonList == null) return;
+
+    for (final item in jsonList.docs) {
+      final activity = OrderModel.fromJson(item.data());
+      items.add(activity);
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "503221625381",
+    "project_id": "asap-demo",
+    "storage_bucket": "asap-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503221625381:android:d32ebd306a86e0260e95cc",
+        "android_client_info": {
+          "package_name": "com.example.asapdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503221625381-39v6kc49hcvtj8ssara1guhdb153b1el.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asapdemo",
+            "certificate_hash": "a1b30c69648076e08b947847a2cc4ee315f23357"
+          }
+        },
+        {
+          "client_id": "503221625381-r11dt4p5sqfgebra1ash6pqg8psnobro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX9JzXpDmipneDkgjda3JuVHEEqz4J25c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503221625381-r11dt4p5sqfgebra1ash6pqg8psnobro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
