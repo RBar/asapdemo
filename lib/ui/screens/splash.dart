@@ -7,6 +7,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    context.read<AuthBloc>().add(const AuthEvent.authCheckRequested());
     return BlocListener<AuthBloc, AuthState>(
       listener: (context, state) {
         state.map(

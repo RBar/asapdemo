@@ -28,23 +28,25 @@ class AuthInput extends StatelessWidget {
       textInputAction: textInputAction,
       textAlign: TextAlign.justify,
       obscureText: obscureText,
+      cursorColor: Colors.white,
       decoration: InputDecoration(
           labelStyle:
               Theme.of(context).textTheme.caption.copyWith(color: Colors.white),
-          enabledBorder: const UnderlineInputBorder(
-            borderSide: BorderSide(
-              color: Colors.white,
-            ),
-          ),
-          border: const UnderlineInputBorder(
-              borderSide: BorderSide(
-            color: Colors.white,
-          )),
+          enabledBorder: _border(),
+          focusedBorder: _border(),
+          border: _border(),
           isDense: true,
           hintText: hintText,
           hintStyle: const TextStyle(fontSize: 16, color: Colors.white)),
       onChanged: onChanged,
       validator: validator,
     );
+  }
+
+  UnderlineInputBorder _border() {
+    return const UnderlineInputBorder(
+        borderSide: BorderSide(
+      color: Colors.white,
+    ));
   }
 }
