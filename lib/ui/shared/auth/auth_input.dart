@@ -26,11 +26,13 @@ class AuthInput extends StatelessWidget {
       autocorrect: false,
       keyboardType: keyboardType,
       keyboardAppearance: Brightness.light,
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       textInputAction: textInputAction,
       textAlign: TextAlign.justify,
       obscureText: obscureText,
       cursorColor: Colors.white,
       decoration: InputDecoration(
+          suffixStyle: const TextStyle(color: Colors.red),
           labelStyle:
               Theme.of(context).textTheme.caption.copyWith(color: Colors.white),
           enabledBorder: _border(),
